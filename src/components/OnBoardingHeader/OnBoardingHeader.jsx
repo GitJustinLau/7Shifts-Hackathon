@@ -1,5 +1,5 @@
 import "./OnBoardingHeader.scss";
-import { IconChevronLeft, ProgressBar } from '@7shifts/sous-chef';
+import { IconChevronLeft, ProgressBar, te } from '@7shifts/sous-chef';
 
 const OnBoardingHeader = ({ pagination, progress }) => {
     return (
