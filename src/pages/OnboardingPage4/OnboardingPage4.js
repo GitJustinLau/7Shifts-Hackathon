@@ -1,16 +1,23 @@
 import '@7shifts/sous-chef/dist/index.css';
 import "./OnboardingPage4.scss"
 import {Link} from "react-router-dom";
-import { useState } from 'react';
+import {useState} from 'react';
+import { useEffect } from 'react';
 import OnBoardingHeader from "../../components/OnBoardingHeader/OnBoardingHeader"
 import sideBar from '../../assets/images/side-bar.png';
 import {Button} from '@7shifts/sous-chef'
 const OnboardingPage4 = () => {
 
     const [value, setValue] = useState(0);
+ 
 
-    const adjustNumber = (change) => {
-        setValue((val) => val + change);
+
+    const handleAdd = () => {
+        setValue(prevValue => prevValue + 100);
+    };
+
+    const handleSubtract = () => {
+        setValue(prevValue => prevValue - 100);
     };
 
     return (
@@ -28,24 +35,19 @@ const OnboardingPage4 = () => {
                 </div>
                 <form className='onboarding4__form'>
 
-                    <div className="number-input">
-                        <button className="adjust-button minus"
-                            onClick={
-                                () => adjustNumber(-1)
-                        }>-</button>
-                        <input type="text"
-                            value={value}
+                    <div className="onboarding4__budget">
+                        <span className="onboarding4__minus"
+                            onClick={handleSubtract}>-</span>
+                        <input className='onboarding4__num' type="text"
+                            value={`$ ${value}`}
                             pattern="[0-9]*"
                             readOnly/>
-                        <button className="adjust-button plus"
-                            onClick={
-                                () => adjustNumber(1)
-                        }>+</button>
+                        <span className="onboarding4__plus"
+                            onClick={handleAdd}>+</span>
                     </div>
                     <Link to="/onboarding4" className='onboarding4__link'>
                         <Button theme="marketing" type="button" className="on-board-1__button" size='full-width'>Next</Button>
                     </Link>
-
                 </form>
             </div>
         </main>
