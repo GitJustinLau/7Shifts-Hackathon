@@ -18,8 +18,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 30.5625rem;
-        padding: 7.6875rem 40rem 12.75rem;
+        width: 100%;
+        padding: 7.6875rem 2rem 12.75rem;
     }
 }
 
@@ -36,8 +36,8 @@
 .wrapper {
     &__textfield {
         width: 34rem;
-margin: 3rem;
-        
+        margin: 3rem;
+
     }
 
     &__button {
@@ -46,5 +46,5 @@ margin: 3rem;
 }
 
 ._eX5OL {
-    
+    filter: invert(65%) sepia(92%) saturate(3219%) hue-rotate(331deg) brightness(103%) contrast(97%);
 }

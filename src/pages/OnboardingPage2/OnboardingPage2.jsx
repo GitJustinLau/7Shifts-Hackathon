@@ -4,16 +4,12 @@ import { Link } from 'react-router-dom';
 import OnBoardingHeader from '../../components/OnBoardingHeader/OnBoardingHeader';
 import sideBar from '../../assets/images/side-bar.png';
 import './OnboardingPage2.scss'
-import mapMarker from '../../assets/images/icon-map-marker-knockoff.png';
 
 
 const OnboardingPage2 = () => {
 
     return (
         <main className='on-board-1'>
-            {/* <IconDisplay iconName="IconMapMarker"> */}
-            
-  {/* </IconDisplay> */}
             <img src={sideBar} alt="sidebar" className='on-board-1__sidebar' />
             <div className='on-board-1__content'>
                 <OnBoardingHeader pagination={"2/4"} progress={50} />
@@ -32,8 +28,6 @@ const OnboardingPage2 = () => {
                             prefix={<IconMapMarker color="tangerine-400" />}
                         />
                     </div>
-
-                    {/* <div className="wrapper__button"> */}
                     <Link to="/onboarding3" className='wrapper__button'>
                     <Button
                         size="full-width"
@@ -44,9 +38,6 @@ const OnboardingPage2 = () => {
                         Next
                     </Button>
                     </Link>
-                    {/* </div> */}
-                    
-
                 </div>
             </div>
 
