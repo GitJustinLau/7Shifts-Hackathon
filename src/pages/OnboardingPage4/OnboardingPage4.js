@@ -13,11 +13,11 @@ const OnboardingPage4 = () => {
 
 
     const handleAdd = () => {
-        setValue(prevValue => prevValue + 100);
+        setValue(prevValue => prevValue + 500);
     };
 
     const handleSubtract = () => {
-        setValue(prevValue => prevValue - 100);
+        setValue(prevValue => prevValue - 500);
     };
 
     return (
@@ -45,7 +45,7 @@ const OnboardingPage4 = () => {
                         <span className="onboarding4__plus"
                             onClick={handleAdd}>+</span>
                     </div>
-                    <Link to="/onboarding4" className='onboarding4__link'>
+                    <Link to="/onboarding5" className='onboarding4__link'>
                         <Button theme="marketing" type="button" className="on-board-1__button" size='full-width'>Next</Button>
                     </Link>
                 </form>

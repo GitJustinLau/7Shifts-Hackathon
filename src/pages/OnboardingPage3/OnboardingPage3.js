@@ -24,20 +24,20 @@ const OnboardingPage3 = () => {
                             <h1 className="onboarding3__name">Weekdays</h1>
                             <label className="onboarding3__label">
                                 Open
-                                <input className="onboarding3__weekday" name="weekday_open" placeholder="9:00AM" value="9:00AM"/>
+                                <input className="onboarding3__weekday" name="weekday_open" placeholder="9:00AM" defaultValue="9:00AM"/>
                             </label>
                             <label className="onboarding3__label">
                                 Close
-                                <input className="onboarding3__weekday" name="weekday_close" label="Close" placeholder="9:00AM" value="5:00PM"/>
+                                <input className="onboarding3__weekday" name="weekday_close" label="Close" placeholder="9:00AM" defaultValue="5:00PM"/>
                             </label>
                         </div>
                         <div className='onboarding3__weekend-container'>
                             <h1 className="onboarding3__name">Weekend</h1>
                             <label className="onboarding3__label">Open
-                                <input className='onboarding3__weekend' name="weekend_open" label="Open" placeholder="9:00AM" value="9:00AM"/>
+                                <input className='onboarding3__weekend' name="weekend_open" label="Open" placeholder="9:00AM" defaultValue="9:00AM"/>
                             </label>
                             <label className="onboarding3__label">Close
-                                <input className='onboarding3__weekend' name="weekend_close" label="Close" placeholder="5:00PM" value="5:00PM"/>
+                                <input className='onboarding3__weekend' name="weekend_close" label="Close" placeholder="5:00PM" defaultValue="5:00PM"/>
                             </label>
                         </div>
                     </div>
