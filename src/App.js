@@ -10,10 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* <Route path="/onboarding" element={<OnboardingPage />} /> */}
-        <Route path="/onboarding-2" element={<OnboardingPage2 />} />
-        {/* <Route path="/onboarding" element={<OnboardingPage />} /> */}
         <Route path="/onboarding1" element={<OnboardingPage1 />} />
+        <Route path="/onboarding2" element={<OnboardingPage2 />} />
       </Routes>
     </BrowserRouter>
   );

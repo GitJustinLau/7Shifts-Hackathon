@@ -1,31 +1,54 @@
 import React from 'react';
 import { TextField, IconMapMarker, Button } from '@7shifts/sous-chef';
+import { Link } from 'react-router-dom';
+import OnBoardingHeader from '../../components/OnBoardingHeader/OnBoardingHeader';
+import sideBar from '../../assets/images/side-bar.png';
+import './OnboardingPage2.scss'
+import mapMarker from '../../assets/images/icon-map-marker-knockoff.png';
+
 
 const OnboardingPage2 = () => {
 
     return (
-        <main>
-            <div className="content__container">
-                <div className="content__text">
-                    <h1>Where is "Restaurant" located?</h1>
-                    <p>This helps us recommend you a personalized schedule template made for you.</p>
+        <main className='on-board-1'>
+            {/* <IconDisplay iconName="IconMapMarker"> */}
+            
+  {/* </IconDisplay> */}
+            <img src={sideBar} alt="sidebar" className='on-board-1__sidebar' />
+            <div className='on-board-1__content'>
+                <OnBoardingHeader pagination={"2/4"} progress={50} />
+                <div className="on-board-2__container">
+                    <div className="content__text">
+                        <h1>Where is Samsara located?</h1>
+                        <p>This helps us recommend you a personalized schedule template made for you.</p>
+                    </div>
+                    <div className="wrapper__textfield">
+                        <TextField
+                            onBlur={function noRefCheck() { }}
+                            onChange={function noRefCheck() { }}
+                            onFocus={function noRefCheck() { }}
+                            onKeyDown={function noRefCheck() { }}
+                            placeholder="Enter your restaurant location here"
+                            prefix={<IconMapMarker color="tangerine-400" />}
+                        />
+                    </div>
+
+                    {/* <div className="wrapper__button"> */}
+                    <Link to="/onboarding3" className='wrapper__button'>
+                    <Button
+                        size="full-width"
+                        theme="marketing"
+                        type="button"
+                        id='button__next'
+                    >
+                        Next
+                    </Button>
+                    </Link>
+                    {/* </div> */}
+                    
+
                 </div>
-                <TextField
-                    onBlur={function noRefCheck() { }}
-                    onChange={function noRefCheck() { }}
-                    onFocus={function noRefCheck() { }}
-                    onKeyDown={function noRefCheck() { }}
-                    placeholder="Enter your restaurant location here"
-                    prefix={<IconMapMarker />}
-                />
             </div>
-            <Button
-                size="full-width"
-                theme="marketing"
-                type="button"
-            >
-                Next
-            </Button>
 
         </main>
     );
