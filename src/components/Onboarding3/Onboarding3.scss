@@ -1,0 +1,86 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/text" as *;
+@use "../../styles/partials/font" as *;
+
+.onboarding3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular';
+
+    &__text {
+        text-align: center;
+        margin-bottom: 4rem;
+        
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-content {
+        display: flex;
+        column-gap: 8.75rem;
+    }
+    &__name {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+
+    &__weekday-container, &__weekend-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        padding-bottom: 1rem;
+    }
+
+    &__weekday, &__weekend {
+        height: 3rem;
+        width: 20.125rem;
+        padding-left: 2.2rem;
+        margin-top: 0.5rem;
+        border-radius: 1px;
+        background: url("../../assets/icons/clock-icon.png") no-repeat 0.6rem center;
+        &::placeholder {
+            color: $black;
+        }
+
+    }
+
+    &__button {
+        display: flex;
+        color: $white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $tangerine;
+        width: 34.563rem;
+        height: 4.25rem;
+        margin-top: 7rem;
+        border-color: $tangerine;
+        border-radius: 0.25rem;
+
+        &:hover {
+            cursor: pointer;
+            
+        }
+    }
+
+}

@@ -1,30 +1,12 @@
 import React from 'react';
-import '@7shifts/sous-chef/dist/index.css';
-import {
-    Form,
-    FormRow,
-    TextField,
-    FormFooter, Button} from '@7shifts/sous-chef'
+import Onboarding3 from '../../components/Onboarding3/Onboarding3';
+
 
 
 const HomePage = () => {
     return (
         <div>
-            <h1>welcome</h1>
-            <Form>
-                <FormRow>
-                    <TextField name="firstName" label="First Name"/>
-                    <TextField name="lastName" label="Last Name"/>
-                </FormRow>
-                <TextField name="address" label="Address"/>
-                <FormFooter actions={
-                    {
-                        primary: <Button onClick={
-                            () => {}
-                        }>Save</Button>
-                    }
-                }/>
-            </Form>
+            <Onboarding3 />
     </div>
     );
 };
