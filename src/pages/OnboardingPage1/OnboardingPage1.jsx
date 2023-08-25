@@ -5,6 +5,7 @@ import sideBar from '../../assets/images/side-bar.png';
 import './OnboardingPage1.scss';
 import OnBoardingHeader from "../../components/OnBoardingHeader/OnBoardingHeader";
 import { Text, Button, PillSelectField, TextField } from '@7shifts/sous-chef';
+
 const OnboardingPage1 = () => {
 
     const [pillselect, setPillSelect] = useState(null)
@@ -24,6 +25,7 @@ const OnboardingPage1 = () => {
                     <div className="on-board-1__text-pill">
                         <TextField
                             onChange={setText}
+                            prefix
                             placeholder="Your Restaurant Type"
                         />
                         <PillSelectField
@@ -39,8 +41,8 @@ const OnboardingPage1 = () => {
                             value={pillselect}
                         />
                     </div>
-                    <Link to="/onboarding2">
-                        <Button theme="marketing" type="button" className="on-board-1__button">Next</Button>
+                    <Link to="/onboarding2" className='on-board-1__link'>
+                        <Button theme="marketing" type="button" className="on-board-1__button" size='full-width'>Next</Button>
                     </Link>
                 </div>
             </div>
