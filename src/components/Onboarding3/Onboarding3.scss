@@ -71,6 +71,8 @@
         align-items: center;
         text-align: center;
         background-color: $tangerine;
+        font-weight: 800;
+        font-size: 2rem;
         width: 34.563rem;
         height: 4.25rem;
         margin-top: 7rem;
@@ -79,7 +81,8 @@
 
         &:hover {
             cursor: pointer;
-            
+            background-color: #E16841;
+
         }
     }
 
