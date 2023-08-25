@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, IconMapMarker, Button } from '@7shifts/sous-chef';
+import { TextField, IconMapMarker, Button, Text } from '@7shifts/sous-chef';
 import { Link } from 'react-router-dom';
 import OnBoardingHeader from '../../components/OnBoardingHeader/OnBoardingHeader';
 import sideBar from '../../assets/images/side-bar.png';
@@ -15,8 +15,8 @@ const OnboardingPage2 = () => {
                 <OnBoardingHeader pagination={"2/4"} progress={50} />
                 <div className="on-board-2__container">
                     <div className="content__text">
-                        <h1>Where is Samsara located?</h1>
-                        <p>This helps us recommend you a personalized schedule template made for you.</p>
+                        <Text as="insight">Where is Samsara located?</Text>
+                        <Text as="h5">This helps us recommend you a personalized schedule template made for you.</Text>
                     </div>
                     <div className="wrapper__textfield">
                         <TextField
