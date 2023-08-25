@@ -10,6 +10,7 @@ const OnboardingPage1 = () => {
 
     const [pillselect, setPillSelect] = useState(null)
     const [text, setText] = useState(null)
+    
 
 
     return (
