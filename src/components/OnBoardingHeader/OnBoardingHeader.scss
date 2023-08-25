@@ -1,0 +1,22 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/text" as *;
+
+.onboard-header {
+    width: 100%;
+    background-color: $egplant;
+    padding: 2rem 1rem;
+    color: $white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    &__text {
+        color: $white;
+        font-weight: 600;
+    }
+
+    &__pagination {
+        color: $white;
+    }
+}
