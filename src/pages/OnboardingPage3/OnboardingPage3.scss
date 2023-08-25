@@ -1,0 +1,117 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/text" as *;
+@use "../../styles/partials/font" as *;
+
+.onboarding3 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular';
+    display: flex;
+    height: 100vh;
+
+    &__text {
+        color: var(--color-grey-500);
+        text-align: center;
+        margin: 5rem 0 4rem 0;
+
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: var(--color-grey-500);
+    }
+
+    &__subtitle {
+        color: var(--color-grey-500);
+
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-content {
+        display: flex;
+        column-gap: 3.5rem;
+    }
+    &__name {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        color: var(--color-grey-500);
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+
+    &__weekday-container, &__weekend-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__content {
+        width: 100%;
+    }
+
+    &__sidebar {
+        flex-shrink: 0;
+    }
+
+    &__label {
+        padding-bottom: 1rem;
+    }
+
+    &__weekday, &__weekend {
+        box-sizing: border-box;
+        height: 2.5rem;
+        width: 20.125rem;
+        padding-left: 2.2rem;
+        margin-top: 0.5rem;
+        border-radius: 1px;
+        border: 1px solid $black;
+        background: url("../../assets/icons/clock-icon.png") no-repeat 0.6rem center;
+        &::placeholder {
+            color: $black;
+        }
+        &:focus {
+            border: none;
+        }
+    }
+
+    // &__button {
+    //     display: flex;
+    //     color: $white;
+    //     justify-content: center;
+    //     align-items: center;
+    //     text-align: center;
+    //     background-color: $tangerine;
+    //     font-weight: 800;
+    //     font-size: 2rem;
+    //     width: 34.563rem;
+    //     height: 4rem;
+    //     border-color: $tangerine;
+    //     border-radius: 0.25rem;
+    //     text-decoration: none;
+    //     list-style-type: none;
+
+    //     &:hover {
+    //         cursor: pointer;
+    //         background-color: #E16841;
+    //     }
+    // }
+    &__link {
+        width: 23.2813rem;
+        margin-top: 3rem;
+
+    }
+
+}

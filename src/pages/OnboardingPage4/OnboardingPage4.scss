@@ -1,0 +1,89 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/text" as *;
+@use "../../styles/partials/font" as *;
+
+.onboarding4 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter-Regular';
+    display: flex;
+    height: 100vh;
+
+    &__text {
+        color: var(--color-grey-500);
+        text-align: center;
+        margin: 5rem 0 4rem 0;
+
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        color: var(--color-grey-500);
+    }
+
+    &__subtitle {
+        color: var(--color-grey-500);
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__sidebar {
+        flex-shrink: 0;
+    }
+
+    &__budget {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__minus, &__plus {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        border-radius: 0.25rem;
+        color: $tangerine;
+        
+
+        &:hover {
+            background-color: $tangerine;
+            color: $white;
+            cursor: pointer;
+        }
+        
+    }
+
+    &__num {
+        margin: 0 1rem;
+        padding: 0.2rem;
+        text-align: center;
+        height: 2rem;
+        border: 1px solid $darkgrey;
+        border-radius: 0.5rem;
+        &:focus {
+            border:none;
+        }
+
+    }
+
+    &__link {
+        width: 23.2813rem;
+        margin-top: 3rem;
+    }
+
+}

@@ -11,7 +11,6 @@ const OnBoardingHeader = ({ pagination, progress }) => {
             </header>
             <ProgressBar progress={progress} />
         </>
-
     )
 }
 
