@@ -3,6 +3,7 @@ import "./App.scss"
 import '@7shifts/sous-chef/dist/index.css';
 import OnboardingPage2 from "./pages/OnboardingPage2/OnboardingPage2";
 import OnboardingPage1 from "./pages/OnboardingPage1/OnboardingPage1";
+import OnBoardingPage5 from "./pages/OnboardingPage5/OnBoardingPage5";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<OnboardingPage1 />} />
         <Route path="/onboarding2" element={<OnboardingPage2 />} />
+        <Route path="/onboarding5" element={<OnBoardingPage5/>} />
       </Routes>
     </BrowserRouter>
   );
