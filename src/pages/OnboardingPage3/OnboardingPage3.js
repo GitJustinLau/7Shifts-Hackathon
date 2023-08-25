@@ -3,7 +3,7 @@ import '@7shifts/sous-chef/dist/index.css';
 import { Link } from "react-router-dom";
 import OnBoardingHeader from "../../components/OnBoardingHeader/OnBoardingHeader"
 import sideBar from '../../assets/images/side-bar.png';
-
+import {Button} from '@7shifts/sous-chef'
 const OnboardingPage3 = () => {
     return (
         <main className='onboarding3'>
@@ -24,26 +24,26 @@ const OnboardingPage3 = () => {
                             <h1 className="onboarding3__name">Weekdays</h1>
                             <label className="onboarding3__label">
                                 Open
-                                <input className="onboarding3__weekday" name="weekday_open" placeholder="9:00AM"/>
+                                <input className="onboarding3__weekday" name="weekday_open" placeholder="9:00AM" value="9:00AM"/>
                             </label>
                             <label className="onboarding3__label">
                                 Close
-                                <input className="onboarding3__weekday" name="weekday_close" label="Close" placeholder="9:00AM"/>
+                                <input className="onboarding3__weekday" name="weekday_close" label="Close" placeholder="9:00AM" value="5:00PM"/>
                             </label>
                         </div>
                         <div className='onboarding3__weekend-container'>
                             <h1 className="onboarding3__name">Weekend</h1>
                             <label className="onboarding3__label">Open
-                                <input className='onboarding3__weekend' name="weekend_open" label="Open" placeholder="9:00AM"/>
+                                <input className='onboarding3__weekend' name="weekend_open" label="Open" placeholder="9:00AM" value="9:00AM"/>
                             </label>
                             <label className="onboarding3__label">Close
-                                <input className='onboarding3__weekend' name="weekend_close" label="Close" placeholder="9:00AM"/>
+                                <input className='onboarding3__weekend' name="weekend_close" label="Close" placeholder="5:00PM" value="5:00PM"/>
                             </label>
                         </div>
                     </div>
 
-                    <Link to="/onboarding1"className="onboarding3__button">
-                        Next
+                    <Link to="/onboarding4" className='onboarding3__link'>
+                        <Button theme="marketing" type="button" className="on-board-1__button" size='full-width'>Next</Button>
                     </Link>
 
                 </form>
