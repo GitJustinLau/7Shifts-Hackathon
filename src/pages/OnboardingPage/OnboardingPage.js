@@ -1,5 +1,5 @@
 import React from 'react';
-import Onboarding3 from '../../components/Onboarding3/Onboarding3';
+import Onboarding3 from '../OnboardingPage3/OnboardingPage3';
 
 const OnboardingPage = () => {
     return (
