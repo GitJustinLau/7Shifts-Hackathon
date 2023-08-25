@@ -1,5 +1,2 @@
 @use './styles/partials/font' as *;
-
-.hello {
-    font-family: 'Inter-Regular';
-}
+@use './styles/partials/text' as *;
